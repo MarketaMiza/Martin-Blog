@@ -1,0 +1,44 @@
+footer {
+  margin: 0;
+  padding: 20px 0;
+  background-color: $color-back;
+  color: $color-white;
+  text-align: center;
+  position: sticky;
+}
+
+.footer__text {
+  margin: 10px;
+  padding: 0;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+footer a {
+  display: inline-block;
+  color: $color-white;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+
+footer a:hover {
+  font-size: 110%;
+  color: $color-usafa;
+
+}
+
+@media screen and (min-width: 1024px) {
+ 
+  .footer__text {
+    font-size: 20px;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  
+  .footer__text {
+    font-size: 20px;
+  }
+
+} 

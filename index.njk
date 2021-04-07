@@ -1,0 +1,47 @@
+---
+layout: layouts/sablona.njk
+title: Home
+menu: home
+---
+
+<main class="full-wrapper">
+
+  <div class="inner-wrapper">
+
+    {% for article in collections.articles %}
+      <div class="article-preview">
+        {% if loop.index <= 3 %}
+
+          <h6 class="article-date">
+            {{ article.data.date }}
+          </h6>
+
+          <h3 class="article-h1">
+            <a href="{{ article.url }}">
+              {{ article.data.title }}
+            </a>
+          </h3>
+
+          <p class="article-perex">
+            {{ article.data.perex }}
+            </p>
+
+          <p class="article-p">
+            {{ article.templateContent | striptags() | truncate(100) }}
+          </p>
+
+          <p class="article-link">
+            <a href="{{ article.url }}">Read more &raquo;</a>
+          </p>
+
+          <div class="article-breaker"></div>
+
+        {% endif %}
+      </div>
+    {% endfor %}
+  
+  </div>
+</main>
+
+
+

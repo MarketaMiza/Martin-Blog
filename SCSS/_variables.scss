@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Bodoni Moda", serif;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  display: block;
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  //height: auto;
+  background-color: #ffff;
+}
+ // použité bravy https://coolors.co/0466c8-0353a4-023e7d-002855-001845-001233-33415c-5c677d-7d8597-979dac
+$color-title: #7D8597;
+$color-perex: #001233; //
+$color-date: #7D8597; //small
+$color-text: #000000;
+$color-strong: #001233;
+$color-blockquote: #001233;
+$color-line: #5C677D;
+$color-back: #001233; //background for header and footer
+
+$color-special: #33415C;
+$color-white: #ffffff; //special
+$color-shadow: #ccc;
+$color-usafa: #0353A4;
